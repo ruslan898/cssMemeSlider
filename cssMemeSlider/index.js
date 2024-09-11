@@ -11,6 +11,9 @@ let slideIndex = 0;
 // Устанавливаем обработчики событий для кнопок
 navItems.forEach((item, index) => {
     item.addEventListener('click', (event) => {
+        if (item.classList.contains('nav-item_active')) {
+            return;
+        }
         removeActiveClass(navItems, 'nav-item_active');
         removeActiveClass(slides, 'slider-image_active');
         removeActiveClass(headers, 'header_active');
