@@ -7,7 +7,6 @@ let slideIndex = 0;
 
 
 
-
 // Устанавливаем обработчики событий для кнопок
 navItems.forEach((item, index) => {
     item.addEventListener('click', (event) => {
@@ -22,8 +21,6 @@ navItems.forEach((item, index) => {
         headers[index].classList.add('header_active');
     })
 }) 
-
-
 
 
 
@@ -43,40 +40,3 @@ function addActiveClass(elements, className) {
         }
     })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// // Функция для показа предыдущего слайда
-// function showPreviousSlide() {
-//     slideIndex = (slideIndex - 1 + slideCount) % slideCount;
-//     updateSlider();
-// }
-
-// // Функция для показа следующего слайда
-// function showNextSlide() {
-//     slideIndex = (slideIndex + 1) % slideCount;
-//     updateSlider();
-// }
-
-// // Функция для обновления отображения слайдера
-// function updateSlider() {
-//     slides.forEach((slide, index) => {
-//         if (index === slideIndex) {
-//             slide.style.display = 'block';
-//         } else {
-//             slide.style.display = 'none';
-//         }
-//     });
-// }
-
-// // Инициализация слайдера
-// updateSlider();
